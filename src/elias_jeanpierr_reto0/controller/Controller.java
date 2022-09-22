@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0;
+package elias_jeanpierr_reto0.controller;
 
 /**
  *
  * @author 2dam
  */
-public class App {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Controller {
     
 }
