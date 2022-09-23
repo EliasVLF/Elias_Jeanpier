@@ -5,10 +5,19 @@
  */
 package elias_jeanpierr_reto0.controller;
 
+import elias_jeanpierr_reto0.model.ModelInterface;
+import elias_jeanpierr_reto0.ui.ViewInterface;
+
 /**
  *
  * @author 2dam
  */
 public class Controller {
     
+    public void run(ModelInterface model, ViewInterface view){
+        String texto;
+        texto = model.getSaludo();
+        view.showSaludo(texto);
+        
+    }
 }

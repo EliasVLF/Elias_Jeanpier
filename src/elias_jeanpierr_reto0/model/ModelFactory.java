@@ -5,17 +5,21 @@
  */
 package elias_jeanpierr_reto0.model;
 import elias_jeanpierr_reto0.model.ModelImplements;
+import elias_jeanpierr_reto0.model.ModelImplementsFile;
 import elias_jeanpierr_reto0.model.ModelInterface;
+import java.util.ResourceBundle;
 /**
  *
  * @author 2dam
  */
 public class ModelFactory {
-    private static ModelInterface saludo;
+    public static ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
     public static ModelInterface getModel() {
-	if (saludo == null) {
-		saludo = new ModelImplements();
-	}
-	return saludo;
+       Integer modo = Integer.parseInt(rb.getString("modo"));
+        if (modo == 1) {
+            return new ModelImplementsFile();
+	}else{
+            return new ModelImplements();
+        }
     }
 }

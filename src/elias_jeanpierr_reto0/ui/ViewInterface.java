@@ -10,5 +10,5 @@ package elias_jeanpierr_reto0.ui;
  * @author 2dam
  */
 public interface ViewInterface {
-    public void showSaludo();
+    public void showSaludo(String saludo);
 }

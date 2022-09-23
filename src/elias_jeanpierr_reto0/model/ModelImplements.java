@@ -23,7 +23,7 @@ public class ModelImplements implements ModelInterface {
     private PreparedStatement stmnt;
     private Connection con;
 
-    ResourceBundle bundle = ResourceBundle.getBundle("config");
+    ResourceBundle bundle = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
 
     private String url = bundle.getString("URL");
     private String user = bundle.getString("USER");
@@ -71,16 +71,19 @@ public class ModelImplements implements ModelInterface {
 
     @Override
     public String getSaludo() {
-        System.err.println("aqui 1");
         ResultSet rs = null;
+        String saludo = null;
         this.openConnection();
 
-        String sql = "SELECT mensaje from saludo";
+        String sql = "SELECT * from saludo";
 
         try {
-            System.err.println("aqui 2");
             stmnt = con.prepareStatement(sql);
             rs = stmnt.executeQuery();
+            
+            if (rs.next()) {
+               saludo = rs.getString("mensaje"); 
+            }
 
         } catch (SQLException e) {
             //TODO EXCEPTIONS
@@ -93,10 +96,10 @@ public class ModelImplements implements ModelInterface {
                     e.printStackTrace();
                 }
             }
-System.err.println("aqui 3");
             this.closeConnection();
-            System.out.println(rs);
-            return null;
+            
         }
+        System.out.println(saludo);
+        return saludo;
     }
 }

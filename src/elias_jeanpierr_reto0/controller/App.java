@@ -19,15 +19,11 @@ public class App {
     /**
      * @param args the command line arguments
      */
-            public static ModelImplements mi;
-            public static ModelImplementsFile mf;
-
     public static void main(String[] args) {
         // TODO code application logic here
         //Scanner sc = new Scanner(System.in);
-        System.out.println("ssssssss");
-              
-                mf.getSaludo();
+       Controller ct = new Controller();
+           
     }
     
 }

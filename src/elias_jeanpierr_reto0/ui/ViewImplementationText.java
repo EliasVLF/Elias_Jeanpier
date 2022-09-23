@@ -4,21 +4,16 @@
  * and open the template in the editor.
  */
 package elias_jeanpierr_reto0.ui;
-import elias_jeanpierr_reto0.ui.ViewImplementation;
-import elias_jeanpierr_reto0.ui.ViewMain;
+
 /**
  *
  * @author 2dam
  */
-public class ViewImplementation implements ViewInterface{
+public class ViewImplementationText implements ViewInterface{
 
     @Override
     public void showSaludo(String saludo) {
-        ViewMain ventana = new ViewMain();
-        ventana.setVisible(true);
+        System.out.println(saludo);
     }
 
-
-
-    
 }
