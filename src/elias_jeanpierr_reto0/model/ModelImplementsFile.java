@@ -16,7 +16,7 @@ public class ModelImplementsFile implements ModelInterface{
 
     @Override
     public String getSaludo() {
-         ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.Saludo");
+        ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.Saludo");
         String saludo = rb.getString("mensaje");
         return saludo;
     }

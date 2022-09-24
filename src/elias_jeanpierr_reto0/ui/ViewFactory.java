@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
  */
 public class ViewFactory {
     public static ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
-    public static ViewInterface getModel() {
+    public static ViewInterface getView() {
        Integer modo = Integer.parseInt(rb.getString("modo"));
         if (modo == 1) {
             return new ViewImplementationText();

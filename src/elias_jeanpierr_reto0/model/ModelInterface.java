@@ -5,8 +5,6 @@
  */
 package elias_jeanpierr_reto0.model;
 
-import java.sql.ResultSet;
-
 /**
  *
  * @author 2dam

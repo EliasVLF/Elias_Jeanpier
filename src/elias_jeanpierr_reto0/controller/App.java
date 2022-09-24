@@ -5,10 +5,10 @@
  */
 package elias_jeanpierr_reto0.controller;
 
-import java.util.Scanner;
-import elias_jeanpierr_reto0.model.ModelImplements;
-import elias_jeanpierr_reto0.model.ModelImplementsFile;
-import java.sql.ResultSet;
+import elias_jeanpierr_reto0.model.ModelFactory;
+import elias_jeanpierr_reto0.model.ModelInterface;
+import elias_jeanpierr_reto0.ui.ViewFactory;
+import elias_jeanpierr_reto0.ui.ViewInterface;
 
 /**
  *
@@ -22,7 +22,11 @@ public class App {
     public static void main(String[] args) {
         // TODO code application logic here
         //Scanner sc = new Scanner(System.in);
+        ModelInterface model = ModelFactory.getModel();
+        ViewInterface view = ViewFactory.getView();
+        
        Controller ct = new Controller();
+       ct.run(model, view);
            
     }
     
