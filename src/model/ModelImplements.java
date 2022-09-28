@@ -23,7 +23,7 @@ public class ModelImplements implements Model {
     private PreparedStatement stmnt;
     private Connection con;
 
-    ResourceBundle bundle = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
+    ResourceBundle bundle = ResourceBundle.getBundle("model.config");
 
     private String url = bundle.getString("URL");
     private String user = bundle.getString("USER");

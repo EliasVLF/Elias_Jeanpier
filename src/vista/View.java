@@ -10,5 +10,5 @@ package vista;
  * @author 2dam
  */
 public interface View {
-    public void showSaludo(String saludo);
+    public void showSaludo();
 }

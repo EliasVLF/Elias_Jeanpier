@@ -13,11 +13,9 @@ import model.Model;
  * @author 2dam
  */
 public class Controller {
-    
+    //TODO llamar model java y view java deberia, vamos (by BONILLA)
     public void run(Model model, View view){
-        String texto;
-        texto = model.getSaludo();
-        view.showSaludo(texto);
+       
         
     }
 }

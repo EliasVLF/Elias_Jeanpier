@@ -5,15 +5,21 @@
  */
 package vista;
 
+import java.util.ResourceBundle;
+import static vista.ViewFactory.rb;
+
 /**
  *
  * @author 2dam
  */
 public class ViewImplementationText implements View{
 
+    
+        public static ResourceBundle rb = ResourceBundle.getBundle("model.Saludo");
+        
     @Override
-    public void showSaludo(String saludo) {
-        System.out.println(saludo);
+    public void showSaludo() {
+        System.out.print(rb.getString("mensaje"));
     }
 
 }
