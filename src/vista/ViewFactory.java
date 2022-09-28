@@ -9,16 +9,19 @@ import model.ModelImplementsFile;
 import vista.ViewImplementation;
 import java.util.ResourceBundle;
 import vista.View;
-import model.Model;
 /**
  *
  * @author 2dam
  */
 public class ViewFactory {
-    public static ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
-    public static View getModel() {
-       Integer modo = Integer.parseInt(rb.getString("modo"));
-        if (modo == 1) {
+   public static String rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config").getString("vista");
+    /**
+     * Al igual que la factoria del modelo se le envia por parametro un String que buscara si se encuentra en el archivo
+     * @param tipo
+     * @return Devuelve la implementacion de la vista
+     */
+    public static View getView(String tipo) {
+        if (tipo.equals(rb)) {
             return new ViewImplementationText();
 	}else{
             return new ViewImplementation();

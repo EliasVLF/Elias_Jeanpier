@@ -12,6 +12,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.Model;
+import model.ModelFactory;
+import vista.View;
+import vista.ViewFactory;
 
 /**
  *
@@ -43,7 +47,11 @@ public class App extends Application{
     public static void main(String[] args) {
         // TODO code application logic here
         //Scanner sc = new Scanner(System.in);
-        launch(args);
+         Model model = ModelFactory.getModel("lectura");
+        View view = ViewFactory.getView("visualizacion");
+        
+       Controller ct = new Controller();
+       ct.run(model, view);
            
     }
      

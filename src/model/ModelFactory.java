@@ -13,10 +13,15 @@ import model.Model;
  * @author 2dam
  */
 public class ModelFactory {
-    public static ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
-    public static Model getModel() {
-       Integer modo = Integer.parseInt(rb.getString("modo"));
-        if (modo == 1) {
+    public static String rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config").getString("modelo");
+    /**
+     * El metodo getModel se le pasa por parametro un String en la que se compara con otro que se encuentra en un archivo de propiedades.
+     * Si resulta que el String que se envia se encuentra en el archivo devuelve un objeto u otro.
+     * @param tipo
+     * @return devuelve la implementacion del modelo
+     */
+    public static Model getModel(String tipo) {
+        if (tipo.equals(rb)) {
             return new ModelImplementsFile();
 	}else{
             return new ModelImplements();
