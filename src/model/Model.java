@@ -3,4 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.model;
+package model;
+
+import java.sql.ResultSet;
+
+/**
+ *
+ * @author 2dam
+ */
+public interface Model {
+    public String getSaludo();
+}

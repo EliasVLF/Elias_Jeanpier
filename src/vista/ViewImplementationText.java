@@ -3,22 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.ui;
-import elias_jeanpierr_reto0.ui.ViewImplementation;
-import elias_jeanpierr_reto0.ui.ViewMain;
+package vista;
+
 /**
  *
  * @author 2dam
  */
-public class ViewImplementation implements ViewInterface{
+public class ViewImplementationText implements View{
 
     @Override
     public void showSaludo(String saludo) {
-        ViewMain ventana = new ViewMain();
-        ventana.setVisible(true);
+        System.out.println(saludo);
     }
 
-
-
-    
 }

@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.model;
+package model;
 
-import elias_jeanpierr_reto0.model.ModelInterface;
 import java.util.ResourceBundle;
+import model.Model;
 
 /**
  *
  * @author 2dam
  */
-public class ModelImplementsFile implements ModelInterface{
+public class ModelImplementsFile implements Model{
 
     @Override
     public String getSaludo() {

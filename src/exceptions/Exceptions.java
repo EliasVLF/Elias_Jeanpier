@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.ui;
+package exceptions;
 
 /**
  *
  * @author 2dam
  */
-public class ViewImplementationText implements ViewInterface{
-
-    @Override
-    public void showSaludo(String saludo) {
-        System.out.println(saludo);
-    }
-
+public class Exceptions {
+    
 }

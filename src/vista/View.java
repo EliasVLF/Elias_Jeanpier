@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.ui;
+package vista;
 
 /**
  *
  * @author 2dam
  */
-public interface ViewInterface {
+public interface View {
     public void showSaludo(String saludo);
 }

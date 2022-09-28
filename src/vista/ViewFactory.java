@@ -3,23 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.model;
-import elias_jeanpierr_reto0.model.ModelImplements;
-import elias_jeanpierr_reto0.model.ModelImplementsFile;
-import elias_jeanpierr_reto0.model.ModelInterface;
+package vista;
+import model.ModelImplements;
+import model.ModelImplementsFile;
+import vista.ViewImplementation;
 import java.util.ResourceBundle;
+import vista.View;
+import model.Model;
 /**
  *
  * @author 2dam
  */
-public class ModelFactory {
+public class ViewFactory {
     public static ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
-    public static ModelInterface getModel() {
+    public static View getModel() {
        Integer modo = Integer.parseInt(rb.getString("modo"));
         if (modo == 1) {
-            return new ModelImplementsFile();
+            return new ViewImplementationText();
 	}else{
-            return new ModelImplements();
+            return new ViewImplementation();
         }
     }
 }

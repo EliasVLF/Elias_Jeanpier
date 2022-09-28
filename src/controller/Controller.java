@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.controller;
+package controller;
 
-import elias_jeanpierr_reto0.model.ModelInterface;
-import elias_jeanpierr_reto0.ui.ViewInterface;
+import vista.View;
+import model.Model;
 
 /**
  *
@@ -14,7 +14,7 @@ import elias_jeanpierr_reto0.ui.ViewInterface;
  */
 public class Controller {
     
-    public void run(ModelInterface model, ViewInterface view){
+    public void run(Model model, View view){
         String texto;
         texto = model.getSaludo();
         view.showSaludo(texto);
