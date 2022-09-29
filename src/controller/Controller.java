@@ -8,16 +8,19 @@ package controller;
 import vista.View;
 import model.Model;
 
+
 /**
  *
  * @author 2dam
  */
 public class Controller {
-    
+    /**
+     * El metodo se encarga de ejecutar las dos interfaces del modelo y vista.
+     * @param model: Recoge el saludo 
+     * @param view: Muestra el saludo
+     */
     public void run(Model model, View view){
-        String texto;
-        texto = model.getSaludo();
-        view.showSaludo(texto);
+	view.showGreeting(model.getGreeting());
         
     }
 }

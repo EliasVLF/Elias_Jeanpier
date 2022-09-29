@@ -5,29 +5,29 @@
  */
 package model;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-import model.Model;
 
 /**
+ * En la implementacion de la base de datos leemos de un archivo de propiedades
+ * el URL, el usuario y la contraseña para realizar la conexion.
  *
- * @author 2dam
+ * @author Elias
  */
 public class ModelImplements implements Model {
 
     private PreparedStatement stmnt;
     private Connection con;
 
-    ResourceBundle bundle = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config");
+    ResourceBundle bundle = ResourceBundle.getBundle("model.config");
 
-    private String url = bundle.getString("URL");
-    private String user = bundle.getString("USER");
-    private String pass = bundle.getString("PASS");
+    private final String url = bundle.getString("URL");
+    private final String user = bundle.getString("USER");
+    private final String pass = bundle.getString("PASS");
 
     public void openConnection() {
         try {
@@ -69,10 +69,17 @@ public class ModelImplements implements Model {
         return rs;
     }
 
+    /**
+     * Contiene un metodo que obtiene el saludo de una base de datos, con una
+     * sentencia que selecciona el mensaje de la tabla.
+     *
+     * @return Devuelve el saludo obtenido
+     *
+     */
     @Override
-    public String getSaludo() {
+    public String getGreeting() {
         ResultSet rs = null;
-        String saludo = null;
+        String greeting = null;
         this.openConnection();
 
         String sql = "SELECT * from saludo";
@@ -80,9 +87,9 @@ public class ModelImplements implements Model {
         try {
             stmnt = con.prepareStatement(sql);
             rs = stmnt.executeQuery();
-            
+
             if (rs.next()) {
-               saludo = rs.getString("mensaje"); 
+                greeting = rs.getString("mensaje");
             }
 
         } catch (SQLException e) {
@@ -97,9 +104,8 @@ public class ModelImplements implements Model {
                 }
             }
             this.closeConnection();
-            
+
         }
-        System.out.println(saludo);
-        return saludo;
+        return greeting;
     }
 }

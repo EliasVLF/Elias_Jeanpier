@@ -5,15 +5,19 @@
  */
 package vista;
 
+
+
 /**
- *
- * @author 2dam
+ * Implementacion de la vista
+ * @author Elias
  */
 public class ViewImplementationText implements View{
-
+     /**
+     * Este metodo obtiene el saludo que lee de un archivo de propiedades y lo muestra.
+     */
     @Override
-    public void showSaludo(String saludo) {
-        System.out.println(saludo);
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
     }
 
 }

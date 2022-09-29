@@ -6,9 +6,9 @@
 package vista;
 
 /**
- *
+ * Interfaz de la vista
  * @author 2dam
  */
 public interface View {
-    public void showSaludo(String saludo);
+    public void showGreeting(String greeting);
 }

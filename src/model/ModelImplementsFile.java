@@ -6,18 +6,24 @@
 package model;
 
 import java.util.ResourceBundle;
-import model.Model;
 
 /**
+ * Implementacion lectura de un archivo de propiedades
  *
- * @author 2dam
+ * @author Elias
+ *
  */
-public class ModelImplementsFile implements Model{
+public class ModelImplementsFile implements Model {
 
+    /**
+     * Este metodo obtiene el saludo que lee de un archivo de propiedades.
+     *
+     * @return Devuelve el saludo
+     */
     @Override
-    public String getSaludo() {
-         ResourceBundle rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.Saludo");
-        String saludo = rb.getString("mensaje");
-        return saludo;
+    public String getGreeting() {
+        ResourceBundle rb = ResourceBundle.getBundle("model.Saludo");
+        String greeting = rb.getString("mensaje");
+        return greeting;
     }
 }

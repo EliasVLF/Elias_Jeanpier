@@ -4,27 +4,30 @@
  * and open the template in the editor.
  */
 package vista;
-import model.ModelImplements;
-import model.ModelImplementsFile;
-import vista.ViewImplementation;
+
 import java.util.ResourceBundle;
-import vista.View;
+
 /**
  *
  * @author 2dam
  */
 public class ViewFactory {
-   public static String rb = ResourceBundle.getBundle("elias_jeanpierr_reto0.model.config").getString("vista");
+
+    private static Integer modoV = Integer.parseInt(ResourceBundle.getBundle("model.config").getString("modoVista"));
+
     /**
-     * Al igual que la factoria del modelo se le envia por parametro un String que buscara si se encuentra en el archivo
-     * @param tipo
+     * Al igual que la factoria del modelo se le envia por parametro un String
+     * que buscara si se encuentra en el archivo
+     *
      * @return Devuelve la implementacion de la vista
      */
-    public static View getView(String tipo) {
-        if (tipo.equals(rb)) {
-            return new ViewImplementationText();
-	}else{
+    public static View getView() {
+        if (modoV != 1) {
+            //implemetation from FX
             return new ViewImplementation();
+        } else {
+            //implemetation from Console
+            return new ViewImplementationText();
         }
     }
 }

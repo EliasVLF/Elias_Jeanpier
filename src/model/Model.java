@@ -5,12 +5,12 @@
  */
 package model;
 
-import java.sql.ResultSet;
-
 /**
+ * Interfaz del modelo
  *
  * @author 2dam
  */
 public interface Model {
-    public String getSaludo();
+
+    public String getGreeting();
 }
