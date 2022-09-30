@@ -30,6 +30,6 @@ O haciendo un dobleClick sobre el .jar
 
   <a href="https://github.com/elias1Dam" target="__blank">elias1Dam</a>
   </br>
-  <a href="https://github.com/JeanC22" target="__blank">JeanC22</a>
+  <a href="https://github.com/JeanC22" target="_blank">JeanC22</a>
   
   <p align="right">(<a href="#top">Volver arriba</a>)</p>
