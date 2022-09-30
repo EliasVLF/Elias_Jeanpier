@@ -29,7 +29,7 @@ O haciendo un dobleClick sobre el .jar
 ## Autores
 <a href="https://github.com/elias1Dam" target="_blank"><img src="https://avatars.githubusercontent.com/u/101640254?v=4" width=55></a>
 
-<a href="https://github.com/JeanC22" target="_blank"><img src="https://avatars.githubusercontent.com/u/76107258?v=4" border-radius=50px width=55></a>
+<a href="https://github.com/JeanC22" target="_blank"><img src="https://avatars.githubusercontent.com/u/76107258?v=4"  width=55></a>
   
   <p align="right">(<a href="#top">Volver arriba</a>)</p>
   
