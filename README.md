@@ -28,6 +28,6 @@ O haciendo un dobleClick sobre el .jar
 
 ## Autores
 
-([<img src="https://avatars.githubusercontent.com/u/101640254?v=4" width=55><br><sub> elias1Dam </sub>](https://github.com/elias1Dam))</br>([<img src="https://avatars.githubusercontent.com/u/76107258?v=4" width=55><sub>Jeanpierr</sub>](https://github.com/JeanC22)
+([<img src="https://avatars.githubusercontent.com/u/101640254?v=4" width=55><br><sub> elias1Dam </sub>](https://github.com/elias1Dam))</br>([<img src="https://avatars.githubusercontent.com/u/76107258?v=4" width=55>(https://github.com/JeanC22)])
   
   <p align="right">(<a href="#top">Volver arriba</a>)</p>
