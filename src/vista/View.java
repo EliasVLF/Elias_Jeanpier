@@ -3,4 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.controller;
+package vista;
+
+/**
+ * Interfaz de la vista
+ * @author 2dam
+ */
+public interface View {
+    public void showGreeting(String greeting);
+}

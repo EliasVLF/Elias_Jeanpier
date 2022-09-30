@@ -3,12 +3,4 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package elias_jeanpierr_reto0.model;
-
-/**
- *
- * @author 2dam
- */
-public class AccessBD {
-    
-}
+package model;
