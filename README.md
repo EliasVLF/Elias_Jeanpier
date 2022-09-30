@@ -1,6 +1,6 @@
-<p align="center"><img src="https://bodyforbusiness.com/wp-content/uploads/2016/08/Mentoring.jpg" width="400"></p>
+<p id="top" align="center"><img src="https://bodyforbusiness.com/wp-content/uploads/2016/08/Mentoring.jpg" width="400"></p>
 
-## Details
+## Detalles
 
 - [x] Cuenta con un archivo de propiedaes que se encuentra en src -> model -> config.properties (aqui se define la forma de mostrar y recibir los datos)
 
@@ -25,3 +25,9 @@ java -jar "nombre del .jar"
 
 ```
 O haciendo un dobleClick sobre el .jar
+
+## Autores
+  [@elias1Dam](https://github.com/elias1Dam)
+  [@JeanC22](https://github.com/JeanC22)
+  
+  <p align="right">(<a href="#top">Volver arriba</a>)</p>
