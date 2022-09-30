@@ -27,7 +27,8 @@ java -jar "nombre del .jar"
 O haciendo un dobleClick sobre el .jar
 
 ## Autores
-  [@elias1Dam](https://github.com/elias1Dam)</br>
-  [@JeanC22](https://github.com/JeanC22)
+
+  <a href="https://github.com/elias1Dam" target="__blank">elias1Dam</a>
+  <a href="https://github.com/JeanC22" target="__blank">JeanC22</a>
   
   <p align="right">(<a href="#top">Volver arriba</a>)</p>
