@@ -6,6 +6,7 @@
 package model;
 
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -25,12 +26,18 @@ public class ModelFactory {
      * @return devuelve la implementacion del modelo
      */
     public static Model getModel() {
-        if (modoD != 1) {
+        
+        
+        if (modoD == 1) {
             //implemetation from Database
             return new ModelImplements();
-        } else {
+        } else if(modoD==0) {
             //implemetation from File
             return new ModelImplementsFile();
+        }else{
+            JOptionPane.showMessageDialog(null, "Escoja una de las dos opciones de recoger datos dadas");
+            
+            return null;
         }
     }
 }

@@ -6,6 +6,7 @@
 package vista;
 
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,12 +23,16 @@ public class ViewFactory {
      * @return Devuelve la implementacion de la vista
      */
     public static View getView() {
-        if (modoV != 1) {
+        if (modoV == 1) {
             //implemetation from FX
             return new ViewImplementation();
-        } else {
+        } else if(modoV == 0) {
             //implemetation from Console
             return new ViewImplementationText();
+        }else{
+            JOptionPane.showMessageDialog(null, "Escoja una de las dos opciones de visualizar dadas");
+            
+            return null;
         }
     }
 }
