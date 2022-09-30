@@ -28,8 +28,7 @@ O haciendo un dobleClick sobre el .jar
 
 ## Autores
 
-  <a href="https://github.com/elias1Dam" target="_blank">elias1Dam</a>
-  </br>
-  <a href="https://github.com/JeanC22" target="_blank">JeanC22</a>
+ | [<img src="https://avatars.githubusercontent.com/u/101640254?v=4" width=115><br><sub> elias1Dam </sub>](https://github.com/elias1Dam ) |  [<img src="https://avatars.githubusercontent.com/u/76107258?v=4" width=115><br><sub>Jeanpierr</sub>]([https://github.com/JeanC22](https://github.com/ellenpimentel)) |
+
   
   <p align="right">(<a href="#top">Volver arriba</a>)</p>
